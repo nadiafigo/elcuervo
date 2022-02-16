@@ -1,5 +1,108 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {	
+	font-family: 'Montserrat', sans-serif;	
+    height: 100vh;
+    width: 100vw;        
+}
+
+.container {
+    display: flex;
+    flex-direction: row;   
+    max-height: 100vh;
+    overflow: hidden; 
+}
+
+.window {
+    width: 50vw;    
+    height: 100vh;
+    display: inline-block;
+    margin: none;
+    padding: 2em 4em;
+}
+
+h1.title {
+    font-weight: bold;
+    margin: 0;    
+    font-size: 2em;
+}
+
+input.login__input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;    
+}
+
+.login__form {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-div, .register__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__label {
+    margin-top: 1em;
+}
+
+.login__span {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.login__span a {
+    text-decoration: none;
+}
+
+.button_zone {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.login_button {
+    border-radius: 8px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	transition:  background-color 80ms ease-in;
+    cursor: pointer;
+}
+
+.login_button:hover {
+    background-color: #b5311a;
+}
+
+.register__img {
+    width: 100%;
+    height: auto;
+}
+
+.register__title {
+    margin-top: 2em;
+}
+
+.register__span {
+    margin-top: 1em;    
+}
+
+.register__button {
+    border-radius: 8px;
+	border: 1px solid #FF4B2B;
+	background-color: white;
+	color: #3e3e3e;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	transition:  background-color 80ms ease-in;
+    cursor: pointer;
 }
