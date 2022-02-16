@@ -8,32 +8,38 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>El Cuervo | Nido de juegos</title>
 </head>
-<body>  
+<body>    
   <div class="container">
-    <div class="window login-div">
-      <h1 class="title">Iniciar sesion</h1>
-      <form class="login__form">
-        <label for="user" class="login__label">Usuario o mail</label>        
-        <input type="text" class="login__input" name="user" id="user" placeholder="user@example.com" required>
-        
-        <label for="password" class="login__label">Contraseña</label>
-        <input type="password" class="login__input" name="password" id="password" placeholder="Contraseña" required>
-    
-        <span class="login__span"><a href="registro.html">Olvidaste tu Contraseña?</a></span> 
-        <div class="button_zone">
-          <button type="submit" class="login_button">Entrar</button>  
-        </div>
-        
-      </form>      
-    </div>
-    <div class="window register__div">
-      <img class="register__img" src="./img/logo_Logo copia.jpg" alt="Logo">
+    <div class="window wall">
+      <!--
+        <img class="register__img" src="./img/logo_Logo copia.jpg" alt="Logo">
+      -->
       <h1 class="title register__title">Nido de juegos</h1>
       <span class="register__span">Crea tu propia comunidad de jugadores y unete a una nueva experiencia</span>
       <span class="register__span">No tienes cuenta? </span> 
-      <div class="button_zone">
-        <button class="register__button" href="registro.html">Registrate</button>
-      </div>      
+      
+    </div>
+    <div class="window">
+      <div class="login__div">
+        <img class="__icon" src="./img/el_cuervo_icon.png" alt="Logo" />
+        <h1 class="title">Iniciar sesión</h1>
+        <form class="login__form">
+      
+          <label for="user" class="login__label">Usuario o mail</label>        
+          <input type="text" class="login__input" name="user" id="user" placeholder="user@example.com" required>
+      
+          <label for="password" class="login__label">Contraseña</label>
+          <input type="password" class="login__input" name="password" id="password" placeholder="Contraseña" required>
+        
+          <span class="login__span"><a href="#">¿Olvidaste tu Contraseña?</a></span> 
+          <div class="button_zone">
+            <button type="submit" class="button bttn_primary">Entrar</button>  
+            <a href="registro.html">
+              <button type="button" class="button inline" href="">Registrate</button>
+            </a>            
+          </div>             
+        </form>      
+      </div>
     </div>
   </div>
 </body>
