@@ -13,13 +13,12 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;   
     min-height: 100vh;     
 }
 
 .window {
     width: 100vw;    
-    height: 100vh;
+    min-height: 100vh;
     display: block;    
 }
 
@@ -112,49 +111,29 @@ input.login__input {
 
 @media (min-width: 1000px) {
     .wall {
-        display: block;
+        display: block;        
+        overflow: hidden;
     }
 
     .window {
         display: inline-block;
         width: 50vw;
+        min-height: 100vh;        
+    }
+
+    .wall__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .button_zone {
+        display: flex;        
+        flex-direction: row-reverse;
+    }
+
+    .button {
+        width: initial;
+        margin-left: 1em;
     }
 }
-
-/*
-.login-div, .register__div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.login_button {
-    border-radius: 8px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	transition:  background-color 80ms ease-in;
-    cursor: pointer;
-}
-
-
-
-.register__img {
-    width: 100%;
-    height: auto;
-}
-
-.register__title {
-    margin-top: 2em;
-}
-
-.register__span {
-    margin-top: 1em;    
-}
-
-
-*/
